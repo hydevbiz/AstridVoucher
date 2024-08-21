@@ -1,28 +1,31 @@
-## AstridVoucher
+## 🎫 AstridVoucher 
 
-### Commands
+AstridVoucher is a plugin designed to manage and distribute vouchers on your Minecraft server. It allows you to easily grant players vouchers with various rewards and configurations.
 
-- **`voucher give <voucher_name> %player_name% <quantity>`**
-  - **Description:** Grants a specified quantity of a voucher to a player.
+### 🔧 Commands
+
+- **`/voucher give <voucher_name> %player_name% <quantity>`**
+  - **Description:** Grants a specified number of vouchers to a player.
   - **Usage Example:** `voucher give rankknight player123 1`
 
-### Example Configuration
+### ⚙️ Example Configuration 
 
-Below are examples of different types of vouchers you can configure for the `AstridVoucher` plugin:
+Here are examples of different voucher types you can set up with the `AstridVoucher` plugin:
 
 #### Normal Voucher
 
-This voucher provides a rank or permission to the player.
+This voucher grants a rank or permission to the player.
+
+#### Normal Voucher Configuration
 
 ```yaml
-# Normal Voucher Configuration
 rankknight:
   material: 'PLAYER_HEAD'
   skull-url: "http://textures.minecraft.net/texture/55a5e142a889d73a0dc4e95343de2689549d23ac77edb9a7ec127839d4973cbf"
   name: '&3&k|&3Knight&3&k|&r &3&lRank Voucher'
   glow: false
   lore:
-    - '&7This voucher will give you &afree &7access'
+    - '&7This voucher grants &afree &7access'
     - '&7to the &3&k|&3Knight&3&k|&r &7rank!'
     - ''
     - '&a&lRight Click&r&7 to redeem'
@@ -36,14 +39,15 @@ rankknight:
 #### Chance Voucher Configuration
 
 ```yml
+
 kitknight:
   material: PAINTING
-  name: '&3&k|&3Knight&3&k|&r &3&lkit Voucher'
+  name: '&3&k|&3Knight&3&k|&r &3&lKit Voucher'
   glow: true
   lore:
-    - '&7Incredible, this gives you access to all'
-    - '&7the items included in the &3&k|&3Knight&3&k|&r &7kit.'
-    - '&7Gearing up has never been that easy!'
+    - '&7This voucher gives you access to'
+    - '&7all the items in the &3&k|&3Knight&3&k|&r &7kit.'
+    - '&7Gearing up has never been easier!'
     - ''
     - '&a&lRight Click&r&7 to redeem'
   fireworks: []
@@ -51,7 +55,7 @@ kitknight:
     - 'ENTITY_ITEM_PICKUP;1.0;1.0'
   rewards:
     main:
-      name: Knight set!
+      name: Knight Set!
       chance: 100
       commands:
         - 'ak give {player} kit ranked_knight_kit 1'
@@ -59,7 +63,7 @@ kitknight:
   animation:
     enabled: true
     text: "<gold><obfuscated>A <!obfuscated><white>%item% <yellow><obfuscated>A"
-    sub-text: "Knight kit voucher"
+    sub-text: "Knight Kit Voucher"
     fade-in: 0
     stay: 20
     fade-out: 5
@@ -68,6 +72,5 @@ kitknight:
     color-after-randomization: "&a"
 ```
 
-# Custom Skull Head Support
-
-The AstridVoucher plugin supports custom skull heads. You can use a URL for the skull texture or specify a material type. Customize the skull-url or material field to use custom textures for your vouchers.
+## 🛠️ Custom Skull Head Support 
+AstridVoucher supports custom skull heads. You can use a URL for the skull texture or specify a material type. Customize the skull-url or material field to use custom textures for your vouchers.
