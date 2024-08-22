@@ -1,6 +1,6 @@
 ## 🎫 AstridVoucher 
 
-AstridVoucher is a plugin designed to manage and distribute vouchers on your Minecraft server. It allows you to easily grant players vouchers with various rewards and configurations.
+AstridVoucher is a custom plugin for the AstridCloud server, designed to manage and distribute vouchers 🎫. Easily grant players vouchers with customizable rewards and configurations, tailored specifically for AstridCloud.
 
 ### 🔧 Commands
 
